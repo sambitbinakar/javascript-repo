@@ -37,3 +37,12 @@ console.log(Math.pow(3,4))//81
  console.log(Math.max(3,4,5,6,78,456))//456
  console.log(Math.random()) // 0.34586748406602763
 console.log(Math.round(4.6234))//5
+console.log(Math.PI);//3.14.......
+const descripter = Object.getOwnPropertyDescriptor(Math ,"PI")
+console.log(descripter);
+/*{
+    value: 3.141592653589793,
+    writable: false,
+    enumerable: false,
+    configurable: false
+  }*/ // so we can't change the values it is const 

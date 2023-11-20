@@ -65,11 +65,16 @@ function saymyname(){
 
 // function chai(){
 //   let username ="sambit"
-//   console.log(this.username);//this is only use in object //undefind
+//   console.log(this.username);//this keyword is only use in object //undefind
 // }
 
-// function chai(){
+//  const chai = function(){
 //   let username ="sambit"
 //   console.log(this.username);
-// }
-// chai()
+//  }//undefind
+
+ const chai = ()=>{
+  let username ="sambit"
+  console.log(this.username);
+ }
+ chai()// undefind

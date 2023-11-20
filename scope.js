@@ -44,7 +44,36 @@ function addone(num){
 //console.log(addone(5));//6
 
 //console.log(addtwo(5));// return  error 
-const addtwo = function(num){
-  return num+2
-}
+// const addtwo = function(num){
+//   return num+2
+// }
 // console.log(addtwo(5));//7
+
+// // *************************** arrow function **************************
+// const chai = ()=>{
+//   let username ="sambit"
+//   console.log(this.username);
+//  } // in arrow function this keyword doesn't work 
+ //chai()
+
+//  const addtwo = (num1,num2)=>{        // type one declaration 
+//     return num1+num2
+//  } 
+//  console.log(addtwo(3,4));// 7
+
+//const addtwo =(num1,num2) => num1+num2   //type two declaration 
+
+// const addtwo =(num1,num2) => (num1+num2)  //type three declaration 
+
+const addtwo =(num1,num2) => ({username:"sambit"})  // return object 
+// console.log(addtwo(3,4));
+
+// ***********************Immediately invoked function Expression(IIFE)****************************************************
+//due to global scope pollution we immediate execution
+(function chai(){
+  console.log('DB conncted');
+})(); 
+//we use a semicolon for end execution 
+((name)=>{
+  console.log(`username${name}`);
+})('sambit') ;  

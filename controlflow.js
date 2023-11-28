@@ -117,7 +117,7 @@ let val1;
 // val1 = 5 ?? 10 //5
 val1 = null ?? 10 //10
 val1 = undefined ?? 20 //20
-val1 = null ?? 10 ?? 20 //20 
+val1 = null ?? 10 ?? 20 //10 
 val1 = null ?? undefined ?? 10 //10
 val1 = null ?? undefined //undefind
 

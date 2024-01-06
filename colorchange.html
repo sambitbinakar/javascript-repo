@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+        const randomcolor = function(){
+            const hex='0123456789ABCDEF';
+            let bgcolor="#";
+            for (let i = 0; i <6; i++) {
+                bgcolor += hex[Math.floor(Math.random() * 16)]
+            }
+            return bgcolor;
+            
+        };
+        let intervalid;
+        const startchage = function(){
+            if(!intervalid){
+            intervalid = setInterval(changbg,1000);}
+            function changbg(){
+            document.body.style.backgroundColor = randomcolor();}
+        };
+        const stopchage = function(){
+            clearInterval(intervalid);
+            intervalid=null;
+        };
+        document.querySelector("#start").addEventListener("click", startchage);
+        document.querySelector("#stop").addEventListener("click", stopchage);
+        
+    </script>
+</body>
+</html>

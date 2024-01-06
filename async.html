@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stoped">stop</button>
+    <h1>javascript</h1>
+    <button id="start">start</button><button id="stop">stop</button>
+    <script>
+        const say = function() {console.log('sambit')};
+        const text =function () {
+          document.querySelector('h1').  
+          innerHTML="kanha"
+        } 
+       const change = setTimeout(text,3000)
+        document.querySelector('#stoped').addEventListener('click', function(e) {
+            clearTimeout(change);
+            console.log('stoped');
+        })
+        const saydate =  function(date) {
+            console.log(date,Date.now())};
+        
+       const interval= setInterval(saydate,1000,"hii");
+        clearInterval(interval);
+            
+    </script>
+</body>
+</html
